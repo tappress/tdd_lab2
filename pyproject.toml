@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "tdd-lab2"
+version = "0.1.0"
+description = ""
+authors = ["Andrii <tap.press.swap@gmail.com>"]
+packages = [
+    { include = "converter.py", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
